@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Mail size={11} className="text-[var(--primary-red)]" />
-                  <a href="mailto:hrd@obayashi.in" className="hover:text-white transition-colors">hrd@obayashi.in</a>
+                  <a href="mailto:hrd@obayashi.org" className="hover:text-white transition-colors">hrd@obayashi.org</a>
                 </div>
               </div>
             </div>
@@ -78,6 +78,7 @@ export default function Footer() {
             <h4 className="footer-col-title"><Link to="/company" className="footer-link-main">About Us</Link></h4>
             <ul className="footer-link-list">
               <li><Link to="/company" className="footer-link bold">Company Overview</Link></li>
+              <li><Link to="/company/leadership" className="footer-link bold-accent">Executive Leadership</Link></li>
               <li><Link to="/company/business-performance" className="footer-link bold-accent">Business Performance Chart</Link></li>
               <li><Link to="/company/certificates" className="footer-link bold-accent">Certificates & Awards</Link></li>
               <li><Link to="/company#message" onClick={() => handleHashClick('/company#message')} className="footer-link">President's Message</Link></li>
@@ -114,7 +115,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <Mail size={11} className="text-[var(--primary-red)] shrink-0" />
-                  <a href="mailto:hrd@obayashi.in" className="footer-link">hrd@obayashi.in</a>
+                  <a href="mailto:hrd@obayashi.org" className="footer-link">hrd@obayashi.org</a>
                 </li>
               </ul>
             </div>
