@@ -15,7 +15,7 @@ import {
   Briefcase
 } from 'lucide-react';
 import CompanySubNav from '../components/CompanySubNav';
-import { boardOfDirectors, executiveLeadershipTeam } from '../data/companyContent';
+import { boardOfDirectors } from '../data/companyContent';
 
 export default function Leadership() {
   useEffect(() => {
@@ -109,37 +109,6 @@ export default function Leadership() {
         </div>
       </section>
 
-      {/* Section 2: Executive Leadership Team (Faithfully replicating user's screenshot layout & style) */}
-      <section className="section-padding light-bg-section">
-        <div className="container">
-          <div className="executive-team-header-block">
-            <h2 className="executive-team-title">Executive Leadership Team</h2>
-            <p className="executive-team-desc">
-              Functional heads and regional directors driving operational excellence, project execution, and client partnerships worldwide.
-            </p>
-          </div>
-
-          <div className="executive-cards-grid">
-            {executiveLeadershipTeam.map((exec, idx) => (
-              <motion.div
-                key={exec.id}
-                className="executive-member-card"
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.07 }}
-              >
-                <h3 className="exec-name">{exec.name}</h3>
-                <p className="exec-role">{exec.role}</p>
-                <div className="exec-meta">
-                  <span className="exec-dept-badge">{exec.department}</span>
-                  <p className="exec-desc">{exec.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Section 3: Corporate Governance & Fiduciary Commitment */}
       <section className="section-padding">
