@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle2, ShieldCheck, Mail, Building2, Phone, AlertCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Send, CheckCircle2, ShieldCheck, ShieldAlert, Mail, Building2, Phone, AlertCircle, ChevronRight } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -73,6 +74,25 @@ export default function Contact() {
       </div>
 
       <div className="container section-padding">
+        {/* Important Security Alert Banner */}
+        <div className="security-alert-banner" style={{ marginBottom: '36px' }}>
+          <div className="security-alert-content">
+            <div className="security-alert-icon-wrap">
+              <ShieldAlert size={26} strokeWidth={2.2} />
+            </div>
+            <div className="security-alert-text">
+              <h3 className="security-alert-title">Important Security Alert</h3>
+              <p className="security-alert-desc">
+                Please be aware of fraudulent Obayashi job offers. Always verify employment opportunities.
+              </p>
+            </div>
+          </div>
+          <Link to="/security-notice" className="security-alert-btn">
+            <span>READ NOTICE</span>
+            <ChevronRight size={16} strokeWidth={2.5} />
+          </Link>
+        </div>
+
         <div className="contact-layout-grid">
           {/* Form Side */}
           <div className="contact-form-container">
@@ -423,6 +443,12 @@ export default function Contact() {
               <p className="security-card-text">
                 Verify any email source carefully. Official correspondence from Obayashi Corporation in India originates solely from verified <strong>@obayashi.org</strong> domains. Obayashi Corporation does not issue transactional funds requests or recruitment fees through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
               </p>
+              <div style={{ marginTop: '14px', paddingTop: '12px', borderTop: '1px solid #ffd1d5' }}>
+                <Link to="/security-notice" className="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--primary-red)] hover:underline">
+                  <span>Read full notice on fraudulent job offers</span>
+                  <ChevronRight size={13} strokeWidth={2.5} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

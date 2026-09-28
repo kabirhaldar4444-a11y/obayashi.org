@@ -29,6 +29,7 @@ const Technologies         = lazy(() => import('./pages/Technologies'));
 const Sustainability       = lazy(() => import('./pages/Sustainability'));
 const News                 = lazy(() => import('./pages/News'));
 const Contact              = lazy(() => import('./pages/Contact'));
+const SecurityNotice       = lazy(() => import('./pages/SecurityNotice'));
 const UtilityPage          = lazy(() => import('./pages/UtilityPage'));
 
 function App() {
@@ -64,6 +65,8 @@ function App() {
             <Route path="/sustainability" element={<Sustainability />} />
             <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/security-notice" element={<SecurityNotice />} />
+            <Route path="/notice" element={<SecurityNotice />} />
             <Route path="/:policyId" element={<UtilityPage />} />
           </Routes>
         </Suspense>

@@ -152,6 +152,7 @@ export default function Footer() {
             <li><Link to="/terms-of-use" className="footer-util-link">Terms of Use</Link></li>
             <li><Link to="/social-media-policy" className="footer-util-link">Social Media Policy</Link></li>
             <li><Link to="/accessibility" className="footer-util-link">Web Accessibility</Link></li>
+            <li><Link to="/security-notice" className="footer-util-link">Security Notice</Link></li>
             <li>
               <a
                 href="https://www.linkedin.com/company/obayashi?skipRedirect=true&viewAsMember=true"
