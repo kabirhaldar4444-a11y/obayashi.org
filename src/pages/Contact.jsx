@@ -443,6 +443,9 @@ export default function Contact() {
               <p className="security-card-text">
                 Verify any email source carefully. Official correspondence from Obayashi Corporation in India originates solely from verified <strong>@obayashi.org</strong> domains. Obayashi Corporation does not issue transactional funds requests or recruitment fees through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
               </p>
+              <p className="security-card-text" style={{ marginTop: '12px' }}>
+                Obayashi India Corporation operates under its respective corporate identity and organizational framework. For the avoidance of doubt: Obayashi India Corporation is not affiliated with, owned by, controlled by, represented by, or operating as a subsidiary, branch, representative office, or authorized extension of Obayashi Japan Corporation, Osaka, Japan, accessible through www.obayashi.co.jp.
+              </p>
               <div style={{ marginTop: '14px', paddingTop: '12px', borderTop: '1px solid #ffd1d5' }}>
                 <Link to="/security-notice" className="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--primary-red)] hover:underline">
                   <span>Read full notice on fraudulent job offers</span>
