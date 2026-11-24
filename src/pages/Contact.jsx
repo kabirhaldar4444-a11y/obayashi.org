@@ -392,7 +392,12 @@ export default function Contact() {
                 <Building2 size={18} className="info-icon" />
                 <div>
                   <h4>OBAYASHI CORPORATION (Japan HQ)</h4>
-                  <p>Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
+                  <p>
+                    11th Floor, Queen’s Tower A<br />
+                    2-3-1 Minato Mirai, Nishi-ku<br />
+                    Yokohama, Kanagawa 220-6011<br />
+                    Japan
+                  </p>
                 </div>
               </div>
 
